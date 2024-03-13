@@ -1,0 +1,41 @@
+
+<div class="right-side1">
+  <p>Status:</p>
+  <select [(ngModel)]="ownerData.status">
+    <option value="New">New</option>
+    <option value="InProgress">In Progress</option>
+    <option value="Resolved">Resolved</option>
+    <option value="Finished">Finished</option>
+  </select>
+</div>
+
+<div class="owner-details-container">
+    <div class="left-side">
+      <p>Property Owner Name:
+      <input type="text">{{ownerData.ownerName}}</p>
+      <p>Property Owner Id:
+      <input type="text">{{ ownerData.ownerId }}</p>
+      <p>Property Location:
+      <input type="text">{{ ownerData.propertyLocation }}</p>
+    </div>
+    <div class="right-side">
+      <p>Created By:
+      <input type="text">{{ ownerData.createdBy }}</p>
+      <p>Created Date and Time:
+      {{ ownerData.createdDate | date:'longDate' }}
+      {{ ownerData.createdDate | date:'mediumTime' }}</p>
+      <p>Assigned To:
+      <input type="text">{{ ownerData.assignedTo }}</p>
+    </div>
+  </div>
+
+  <form (submit)="onSubmit()" class="description">
+    <label for="w3review">Description</label>
+    <textarea rows="20" cols="200"></textarea>
+  </form>
+
+  <form (submit)="onSubmit()" enctype="multipart/form-data" class="attach">
+    <label for="fileInput"><h2>Attachments:</h2></label>
+    <input type="file" id="fileInput" name="files" multiple>
+    <button type="submit" class="btn-primary">Create</button>
+  </form>

@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+
+  
+  
+  .form-control-dark {
+    background-color: #343a40;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .nav-item {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    justify-content:center;
+    align-items: right;
+    text-align: right;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #007bff;
+  }
+  
+  .navbar > .container-fluid {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 190px;
+    background-color: #033b4f;
+    padding: 0;
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+  
+  .sidebar-heading {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    color: #343a40;
+  }
+  
+  
+  #myChart {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  
+  
+  .feather {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  .feather-plus-circle,
+  .feather-layers {
+    stroke: #007bff;
+  }
+  
+  .feather-home,
+  .feather-file,
+  .feather-shopping-cart,
+  .feather-users,
+  .feather-bar-chart-2 {
+    stroke: #343a40;
+  }
+  
+  
+  .container-fluid {
+    background-color: #ffffff; 
+    height: vh;
+    width: vh;
+  }
+  .top{
+    background-color: #48489f;
+    flex:column;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  
+  .form-control{
+    flex:column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: right;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d7991dc;
+    color: white;
+    padding: 10px;
+    height: 30px;
+  }
+  
+  .left,
+  .right {
+    flex: 1;
+  }
+  
+  .center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .left span,
+  .right span {
+    font-weight: bold;
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .container-fluid{
+    margin-top: 0px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  

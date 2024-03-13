@@ -1,0 +1,89 @@
+
+.right-side1 {
+  float: right;
+  margin-left: 50px;
+  text-align: right;
+  justify-content:center;
+  align-items: right;
+
+}
+
+
+.owner-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.left-side {
+  flex: 1;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  margin: 20px;
+  margin-right: 150px;
+  float: right;
+}
+
+
+.right-side {
+  flex: 1;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  margin: 30px;
+  margin-left: 50px;
+}
+
+
+.description {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+
+}
+
+
+.description textarea {
+  width: 50%;
+  height: 50px;
+  resize: vertical;
+}
+.attach{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.description-attachments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  display: block;
+  margin: 20px auto;
+  background-color: green;
+  border-radius: 15px;
+  width: 150px;
+  height: 45px;
+}
+.field{
+color: orangered;
+}
+.fields{
+color: orangered;
+text-align: center;
+}
+.owner-details-container{
+padding: 50px;
+}

@@ -1,0 +1,33 @@
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search by Owner ID or Name" (input)="filterTickets()">
+    <button class="btn btn-dark" (click)="filterTickets()">Search</button>
+</div>
+
+<div class="table-container"> 
+    <h2>My Tickets</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ownerID</th>
+                <th>Created By</th>
+                <th>Created Date/Time</th>
+                <th>Status</th>
+                <th>Days to Close</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ticket of filteredTickets" [class.highlight]="ticket.highlighted">
+                <td>{{ ticket.ownerID }}</td>
+                <td>{{ ticket.createdBy }}</td>
+                <td>{{ ticket.createdDateTime }}</td>
+                <td>{{ ticket.status }}</td>
+                <td>{{ ticket.daysToClose }}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="viewTicket(ticket.ownerID)">View</button>
+                    <button class="btn btn-secondary" (click)="updateTicket(ticket.ownerID)">Update</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

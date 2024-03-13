@@ -1,0 +1,63 @@
+<div class="navbar">
+  <div class="left">
+    <span>Property Manager</span>
+  </div>
+  <div class="right">
+    <span>close</span>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Tickets</span>
+            <a class="d-flex align-items-center text-muted" href="#">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="my-tickets">
+              <span data-feather="file"></span>
+              My Tickets
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="open-tickets">
+              <span data-feather="shopping-cart"></span>
+              Open Tickets
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="search">
+              <span data-feather="users"></span>
+              Create New Ticket
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="target">
+              <span data-feather="bar-chart-2"></span>
+              Target This Week
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/search-tickets">
+              <span data-feather="layers"></span>
+              Search Tickets
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+
+
+

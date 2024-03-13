@@ -1,0 +1,81 @@
+.right-side1 {
+  float: right;
+  margin-left: 50px;
+  text-align: right;
+  justify-content:center;
+  align-items: right;
+  justify-content: flex-end;
+}
+
+
+.owner-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:30px;
+}
+
+
+.left-side {
+  flex:1;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: right;
+  margin: 40px;
+  margin-left:180px;
+}
+
+
+.right-side {
+  flex: 1;
+  justify-content:center;
+  align-items:right;
+  text-align:right;
+  margin:50px;
+}
+
+
+.description {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+
+.description textarea {
+  width: 50%;
+  height: 50px;
+  resize: vertical;
+}
+.attach{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.description-attachments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  display: block;
+  margin: 20px auto;
+  background-color: green;
+  border-radius: 15px;
+  width: 150px;
+  height: 45px;
+}
+.text{
+  align-items:center;
+  text-align:right;
+  justify-content:center;
+}

@@ -1,0 +1,48 @@
+<div class="owner-details-container">
+  <div class="left-side">
+    <p>Property Owner Name: <input type="text" [(ngModel)]="ownerData.ownerName" required #ownerName="ngModel"></p>
+    <div *ngIf="ownerName.invalid && (ownerName.dirty || ownerName.touched)" class="error">
+      <p class="field"> * This field is mandatory</p>
+    </div>
+    <p>Property Owner Id: <input type="text" [(ngModel)]="ownerData.ownerId" required #ownerId="ngModel"></p>
+    <div *ngIf="ownerId.invalid && (ownerId.dirty || ownerId.touched)" class="error">
+      <p class="field"> * This field is mandatory</p>
+    </div>
+    <p>Property Location: <input type="text" [(ngModel)]="ownerData.propertyLocation" required #propertyLocation="ngModel"></p>
+    <div *ngIf="propertyLocation.invalid && (propertyLocation.dirty || propertyLocation.touched)" class="error">
+      <p class="field"> * This field is mandatory</p>
+    </div>
+  </div>
+  <div class="right-side">
+    <p>Created By: <input type="text" [(ngModel)]="ownerData.createdBy" required #createdBy="ngModel"></p>
+    <div *ngIf="createdBy.invalid && (createdBy.dirty || createdBy.touched)" class="error">
+      <p class="field">*  This field is mandatory</p>
+    </div>
+    <p>Assignedto: <input type="text" [(ngModel)]="ownerData.assignedTo" required #Assignedto="ngModel"></p>
+    <div *ngIf="Assignedto.invalid && (Assignedto.dirty || Assignedto.touched)" class="error">
+      <p class="field"> * This field is mandatory</p>
+    </div>
+    <p>createdDate<input type="text" [(ngModel)]="ownerData.createdDate" required #createdDate="ngModel"></p>
+    <div *ngIf="createdDate.invalid && (createdDate.dirty || createdDate.touched)" class="error">
+      <p class="field"> * This field is Mandatory</p>
+    </div>
+  </div>
+</div>
+<label class="description">Description<input type="text" [(ngModel)]="ownerData.description" required #description="ngModel"></label>
+<div *ngIf="description.invalid && (description.dirty || description.touched)" class="error">
+
+  <p class="fields"> * This field is Mandatory</p>
+
+</div>
+
+
+
+
+<form (submit)="onSubmit()" enctype="multipart/form-data" class="attach">
+  <label for="fileInput"><h2>Attachments:</h2></label>
+  <input type="file" id="fileInput" name="files" multiple (change)="onFileSelected($event)">
+  <div id="error-message" style="color: red; display: none;">*Please select atleast one file</div>
+  <button type="submit" class="btn-primary">Update</button>
+</form>
+
+

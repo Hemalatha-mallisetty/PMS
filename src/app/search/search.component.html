@@ -1,0 +1,31 @@
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchText" placeholder="Search by Owner ID or Name">
+  <button class="btn btn-dark" (click)="searchOwners(searchText)">Search</button>
+</div>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>OwnerId</th>
+        <th>OwnerName</th>
+        <th>PropertyId</th>
+        <th>MobileNumber</th>
+        <th>Create</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let owner of filteredOwnersData"
+          [class.highlighted]="owner.highlighted">
+        <td>{{ owner.OwnerId }}</td>
+        <td>{{ owner.OwnerName }}</td>
+        <td>{{ owner.PropertyId }}</td>
+        <td>{{ owner.MobileNumber }}</td>
+        <td><a [routerLink]="['/Create',owner.OwnerId]" (click)="navigateToCreate()">{{ owner.Create }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
